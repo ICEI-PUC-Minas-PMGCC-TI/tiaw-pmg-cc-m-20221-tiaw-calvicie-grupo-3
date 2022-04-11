@@ -1,18 +1,22 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7539144&assignment_repo_type=AssignmentRepo)
-# Nome do projeto
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+# Calvicie
+Esse projeto visa instruir e auxiliar pessoas que sofrem ou estão propensas a sofrer de alopecia (calvície). Nós, alunos do curso de Ciência da Computação (PUC-MG), temos a intenção de criar um site simples e eficaz que aglutine várias informações sobre tal distúrbio, para ajudar a população a cuidar de sua saúde e autoestima.
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Gabriel Lacerda Campos Bambirra
+* Guilherme Guimarães Dias Coelho
+* Henrique França Carvalho Soares
+* Leonardo Braga de Oiveira
+* Luiza Vieira de Matos Loures
+* Samuel Luiz da Cunha Viana Cruz 
+* Suzane Lemos de Lima
+
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Carlos Alberto Marques Pietrobon
+* Ilo Amy Saldanha Rivero
 
 ## Instruções de utilização
 
