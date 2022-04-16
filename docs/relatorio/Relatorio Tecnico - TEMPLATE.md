@@ -1,21 +1,26 @@
 # Informações do Projeto
-`TÍTULO DO PROJETO`  
+`Calvície`  
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Trabalho Interdiscplinar Web - Grupo Calvície
 
-`CURSO` 
+`Ciência da Computação` 
 
-......  COLOQUE AQUI O SEU TEXTO ......
+
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
 
-> Inclua a lista dos membros da equipe com seus nomes completos.
+
+
 >
-> Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+>  Os membros do grupo são: 
+> - Gabriel Lacerda Campos Bambirra
+> - Guilherme Guimarães Dias Coelho
+> - Henrique França Carvalho Soares
+> - Leonardo Braga de Oiveira
+> - Luiza Vieira de Matos Loures
+> - Samuel Luiz da Cunha Viana Cruz 
+> - Suzane Lemos de Lima
 
 # Estrutura do Documento
 
