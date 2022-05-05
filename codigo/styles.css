@@ -6,6 +6,16 @@
     justify-content: space-between;
     background-color: white;
     padding: 15px;
+    border-bottom: dotted 1px rgba(0, 0, 0, 0.25);
+}
+.navbar .logo {
+    margin-right: 50px;
+}
+.navbar .list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
 }
 .navbar a{
     text-decoration: none;
@@ -13,14 +23,6 @@
 }
 .navbar a:hover{
     color:slategray;
-}
-.logo {
-    margin-right: 50px;
-}
-.list{
-    list-style: none;
-    display: flex;
-    gap: 25px;
 }
 #toggler,
 .navbar i {
