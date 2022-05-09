@@ -14,7 +14,6 @@ Trabalho Interdiscplinar Web - Grupo Calvície
 
 >
 >  Os membros do grupo são: 
-> - Gabriel Lacerda Campos Bambirra
 > - Guilherme Guimarães Dias Coelho
 > - Henrique França Carvalho Soares
 > - Leonardo Braga de Oiveira
