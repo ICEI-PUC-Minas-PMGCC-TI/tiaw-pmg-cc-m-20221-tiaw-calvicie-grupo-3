@@ -48,7 +48,7 @@ html{
         height: calc(100% - 77px);
             height: -moz-calc(100% - 77px);
             height: -webkit-calc(100% - 77px);
-        background-image: url(img/background-main.jpg);
+        background-image: url(../../imagens/img-index/background.jpg);
         background-color: white;
         background-position:center center; 
         background-repeat: no-repeat;
