@@ -4,7 +4,6 @@ Esse projeto visa instruir e auxiliar pessoas que sofrem ou estão propensas a s
 
 ## Alunos integrantes da equipe
 
-* Gabriel Lacerda Campos Bambirra
 * Guilherme Guimarães Dias Coelho
 * Henrique França Carvalho Soares
 * Leonardo Braga de Oiveira
