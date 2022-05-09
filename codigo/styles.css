@@ -113,3 +113,19 @@ html{
         color:slategray;
     }
 /* MAIN */
+
+
+
+/* QUIZ */
+    .quiz{
+        display: flex;
+        height: calc(100% - 77px);
+            height: -moz-calc(100% - 77px);
+            height: -webkit-calc(100% - 77px);
+        background-color: lightgrey !important;
+        background-image: none !important;
+        background-position:center center; 
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+/* QUIZ */
