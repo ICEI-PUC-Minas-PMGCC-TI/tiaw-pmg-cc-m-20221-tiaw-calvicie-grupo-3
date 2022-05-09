@@ -1,5 +1,5 @@
 # Informações do Projeto
-`Calvície`  
+`Calvície Masculina`  
 
 Trabalho Interdiscplinar Web - Grupo Calvície
 `Ciência da Computação` 
