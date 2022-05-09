@@ -2,17 +2,9 @@
 `Calvície`  
 
 Trabalho Interdiscplinar Web - Grupo Calvície
-
 `Ciência da Computação` 
 
-
-
 ## Participantes
-
-
-
-
->
 >  Os membros do grupo são: 
 > - Guilherme Guimarães Dias Coelho
 > - Henrique França Carvalho Soares
