@@ -1,3 +1,16 @@
+/*
+-------------------------------------------------------------
+OPÇÕES DE FONTES:
+-------------------------------------------------------------
+TÍTULOS -> font-family: 'Be Vietnam Pro', sans-serif;
+
+SUBTÍTULOS E LEGENDAS -> font-family: 'Poppins', sans-serif;
+
+BOTÕES E CLICÁVEIS -> font-family: 'Inter', sans-serif;
+-------------------------------------------------------------
+*/
+
+/* GERAL */
 body,
 html{
     scroll-behavior: smooth;
@@ -5,43 +18,43 @@ html{
     width: 100%;
     margin: 0;
 }
+/* GERAL */
 /* NAVBAR */
-    .navbar {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        background-color: white;
-        padding: 15px;
-        font-family: 'Inter', sans-serif;
-        border-bottom: solid 1px rgba(0, 0, 0, 0.25);
-    }
-    .navbar .logo {
-        margin-right: 50px;
-    }
-    .navbar .list{
-        display: flex;
-        align-items: center;
-        list-style: none;
-        gap: 25px;
-        margin-bottom: 0;
-    }
-    .navbar .btn{
-        color: white;
-    }
-    .navbar a{
-        text-decoration: none;
-        color: inherit;
-    }
-    .navbar a:hover{
-        color:slategray;
-    }
-    #toggler,
-    .navbar i {
-        display: none;
-    }
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    font-family: 'Inter', sans-serif;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.25);
+}
+.navbar .logo {
+    margin-right: 50px;
+}
+.navbar .list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    margin-bottom: 0;
+}
+.navbar .btn{
+    color: white;
+}
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+}
+.navbar a:hover{
+    color:slategray;
+}
+#toggler,
+.navbar i {
+    display: none;
+}
 /* NAVBAR */
-
 /* MAIN */
     main{
         display: flex;
@@ -113,19 +126,3 @@ html{
         color:slategray;
     }
 /* MAIN */
-
-
-
-/* QUIZ */
-    .quiz{
-        display: flex;
-        height: calc(100% - 77px);
-            height: -moz-calc(100% - 77px);
-            height: -webkit-calc(100% - 77px);
-        background-color: lightgrey !important;
-        background-image: none !important;
-        background-position:center center; 
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
-/* QUIZ */
