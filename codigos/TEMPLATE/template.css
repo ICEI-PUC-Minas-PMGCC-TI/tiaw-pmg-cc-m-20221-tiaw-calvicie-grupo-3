@@ -1,13 +1,21 @@
 /*
--------------------------------------------------------------
-OPÇÕES DE FONTES:
--------------------------------------------------------------
+------------------------------------------------------------------------
+                        ESQUEMA DE CORES:
+------------------------------------------------------------------------
+PRETO -> #212529;
+
+CINZA ARDÓSIA -> slategray;
+
+BRANCO -> white;
+------------------------------------------------------------------------
+                        OPÇÕES DE FONTES:
+------------------------------------------------------------------------
 TÍTULOS -> font-family: 'Be Vietnam Pro', sans-serif;
 
 SUBTÍTULOS E LEGENDAS -> font-family: 'Poppins', sans-serif;
 
-BOTÕES E CLICÁVEIS -> font-family: 'Inter', sans-serif;
--------------------------------------------------------------
+BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
+------------------------------------------------------------------------
 */
 
 /* GERAL */
@@ -55,3 +63,23 @@ BOTÕES E CLICÁVEIS -> font-family: 'Inter', sans-serif;
         display: none;
     }
 /* NAVBAR */
+/* FOOTER */
+    .footer {
+        height: 40px;
+        z-index: 999;
+        display: flex;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        background-color: #212529;
+        align-items: middle;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer p {
+        margin: 8px 0px;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+    }
+/* FOOTER */
