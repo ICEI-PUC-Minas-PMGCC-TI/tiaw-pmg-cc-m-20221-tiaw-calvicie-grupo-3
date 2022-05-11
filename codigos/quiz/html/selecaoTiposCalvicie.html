@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cal.vo - Quiz</title>
     <link rel="icon" href="img/logo.png">
-    <link href="../../styles.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +14,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.html"><img style="border-radius: 50%" src="../../img/logo-navbar.png" height="60" width="60"></a>
+        <a href="index.html"><img style="border-radius: 50%" src="../../../imagens/img-index/logo-navbar.png" height="60" width="60"></a>
         <div class="menu">
             <ul class="list">
                 <li><a href="/codigo/informacoes">informações</a></li>
@@ -27,11 +26,30 @@
         <button class="btn" id="toggler"><i class="fa-solid fa-bars"></i></button>
     </nav>
     <main class="quiz">
-        <p>Qual seu tipo de calvície?</p>
-        <a href="tIpos/tipoA.html"><button>Tipo A</button></a>
-        <a href="tipos/tipoO.html"><button>Tipo O</button></a>
-        <a href="tipos/tipoM.html"><button>Tipo M</button></a>
-        <a href="tipos/tipoOM.html"><button>Tipo OM</button></a>
+        <div class="title">
+            <p>Qual seu tipo de calvície?</p>
+        </div>
+        <div class="tipos">
+            <div class="tipos-display">
+                <a href="tipo.html" class="tipo">tipoA</a>
+                <a href="tipo.html" class="tipo">tipoO</a>
+                <a href="tipo.html" class="tipo">tipoM</a>
+                <a href="tipo.html" class="tipo">tipoOM</a>
+                <a href="tipo.html" class="tipo">tipoF</a>
+                <!-- <div class="tipoA">TipoA</div>
+                <div class="tipoO">TipoO</div>
+                <div class="tipoM">TipoM</div>
+                <div class="tipoOM">TipoOM</div>
+                <div class="tipoF">TipoF</div> -->
+            </div>
+            <div class="seletorTipos">
+                <a href="tIpos/tipoA.html"><button>Tipo A</button></a>
+                <a href="tipos/tipoO.html"><button>Tipo O</button></a>
+                <a href="tipos/tipoM.html"><button>Tipo M</button></a>
+                <a href="tipos/tipoOM.html"><button>Tipo OM</button></a>
+            </div>
+        </div>
+
     </main>
     
     
