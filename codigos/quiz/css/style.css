@@ -24,7 +24,7 @@
 }
 .navbar a{
     text-decoration: none;
-    color: inherit;
+    color: black;
 }
 .navbar a:hover{
     color:slategray;
@@ -35,31 +35,57 @@
 }
 /* NAVBAR */
 
-/* QUIZ */
-.quiz{
+
+.imagens--calvice {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    gap: 1.5rem;
+    width:100%;
+    
+}
+
+.imagens--calvice img {
+    width: 80%;
+    margin:10%;
+}
+
+.imagens--calvice p{
+    text-align: center;
+}
+
+.imagens--calvice button {
+
+    align-items: space-around;
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 20%;
+    
+
+}
+.titulo__calvicie h1{
+    width:80%; 
+    text-align: center;
+    margin: 9.5%;
+    
+}
+
+.footer {
+    height: 40px;
+    z-index: 999;
     display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+    align-items: middle;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
 }
-.quiz .title {
-
-    justify-content: center;
-}
-
-.quiz .titletipos{
-    display:flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-direction: row;
-}
-/* QUIZ */
-
-html{
-    white-space: nowrap;
-    
+.footer p {
+    margin: 8px 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
 }
 
-body{
-    
-    overflow: hidden;
-}
