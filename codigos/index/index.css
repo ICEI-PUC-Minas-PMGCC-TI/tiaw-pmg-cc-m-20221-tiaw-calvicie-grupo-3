@@ -90,8 +90,6 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
         position: relative;
         margin: 0 auto;
         align-self: center;
-        align-items: center;
-        justify-content: center;
         text-align: center;
     }
     .telainicio .titulo,
