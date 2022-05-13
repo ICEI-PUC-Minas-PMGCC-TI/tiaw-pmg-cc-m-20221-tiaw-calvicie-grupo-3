@@ -63,11 +63,45 @@
     
 
 }
+
+
 .titulo__calvicie h1{
+    font-family: 'Be Vietnam Pro', sans-serif;
     width:80%; 
     text-align: center;
-    margin: 9.5%;
+    margin-left: 9.5%;
+    margin-bottom: 4%;
+    margin-top: 8%;
     
+}
+
+
+
+.titulo__calvicie {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bnt__calvicie{
+    display: flex;
+    width: 92%;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.bnt__calvicie button{
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 200%;
+}
+
+.prevencao{
+    margin:10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .footer {
@@ -76,7 +110,9 @@
     display: flex;
     left: 0;
     bottom: 0;
+    position: fixed;
     width: 100%;
+    text-align: center;
     color: white;
     background-color: black;
     align-items: middle;
@@ -88,4 +124,3 @@
     font-family: 'Inter', sans-serif;
     font-size: 15px;
 }
-
