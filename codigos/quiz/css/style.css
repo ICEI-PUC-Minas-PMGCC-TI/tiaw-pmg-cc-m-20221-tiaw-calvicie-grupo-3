@@ -24,7 +24,7 @@
 }
 .navbar a{
     text-decoration: none;
-    color: inherit;
+    color: black;
 }
 .navbar a:hover{
     color:slategray;
@@ -35,31 +35,92 @@
 }
 /* NAVBAR */
 
-/* QUIZ */
-.quiz{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.quiz .title {
 
+.imagens--calvice {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    gap: 1.5rem;
+    width:100%;
+    
+}
+
+.imagens--calvice img {
+    width: 80%;
+    margin:10%;
+}
+
+.imagens--calvice p{
+    text-align: center;
+}
+
+.imagens--calvice button {
+
+    align-items: space-around;
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 20%;
+    
+
+}
+
+
+.titulo__calvicie h1{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    width:80%; 
+    text-align: center;
+    margin-left: 9.5%;
+    margin-bottom: 4%;
+    margin-top: 8%;
+    
+}
+
+
+
+.titulo__calvicie {
+    width: 100%;
+    flex-direction: row;
     justify-content: center;
 }
 
-.quiz .titletipos{
-    display:flex;
-    justify-content: space-around;
-    align-items: flex-start;
+.bnt__calvicie{
+    display: flex;
+    width: 92%;
     flex-direction: row;
-}
-/* QUIZ */
-
-html{
-    white-space: nowrap;
-    
+    justify-content:space-evenly;
 }
 
-body{
-    
-    overflow: hidden;
+.bnt__calvicie button{
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 200%;
+}
+
+.prevencao{
+    margin:10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer {
+    height: 40px;
+    z-index: 999;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    align-items: middle;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer p {
+    margin: 8px 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
 }

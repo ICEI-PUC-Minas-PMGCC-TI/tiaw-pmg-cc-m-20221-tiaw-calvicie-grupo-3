@@ -12,45 +12,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600&family=Inter:wght@500&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-dark text-white">
     <nav class="navbar">
-        <a href="index.html"><img style="border-radius: 50%" src="../../../imagens/img-index/logo-navbar.png" height="60" width="60"></a>
+        <a href="../../index/index.html"><img style="border-radius: 50%" src="../../../imagens/img-index/logo-navbar.png" height="60" width="60"></a>
         <div class="menu">
             <ul class="list">
                 <li><a href="/codigo/informacoes">informações</a></li>
                 <li><a href="/codigo/quemsomos">quem somos</a></li>
                 <li><a href="/codigo/compartilhar">compartilhar</a></li>
-                <li><a class="btn btn-dark" href="/codigo/quiz" role="button">quiz</a></li>
+                <li><a class="btn btn-dark" href="mainQuiz.html" role="button">quiz</a></li>
             </ul>
         </div>
         <button class="btn" id="toggler"><i class="fa-solid fa-bars"></i></button>
     </nav>
     <main class="quiz">
-        <div class="title">
-            <p>Qual seu tipo de calvície?</p>
+        <div class = "titulo__calvicie">
+            <h1 class = "display-1"><strong>Qual seu tipo de calvície?</strong></h1>
         </div>
-        <div class="tipos">
-            <div class="tipos-display">
-                <a href="tipo.html" class="tipo">tipoA</a>
-                <a href="tipo.html" class="tipo">tipoO</a>
-                <a href="tipo.html" class="tipo">tipoM</a>
-                <a href="tipo.html" class="tipo">tipoOM</a>
-                <a href="tipo.html" class="tipo">tipoF</a>
-                <!-- <div class="tipoA">TipoA</div>
-                <div class="tipoO">TipoO</div>
-                <div class="tipoM">TipoM</div>
-                <div class="tipoOM">TipoOM</div>
-                <div class="tipoF">TipoF</div> -->
-            </div>
-            <div class="seletorTipos">
-                <a href="tIpos/tipoA.html"><button>Tipo A</button></a>
-                <a href="tipos/tipoO.html"><button>Tipo O</button></a>
-                <a href="tipos/tipoM.html"><button>Tipo M</button></a>
-                <a href="tipos/tipoOM.html"><button>Tipo OM</button></a>
+        <div class="tipos_calvicie">
+            <div class="tipos_display">
+
+
+                <div class="imagens--calvice">
+                    <div class="tipoF">
+                        <img class="img_tipos_calvicie" src="../../../imagens/img-quiz/tipoF.png" alt="calvicieTipoF" >
+                        <a href="tipos/tipoF.html"><button class="btn btn-outline-light btn-lg btn-block"><div class="mx-auto">TIPO F</div></button></a>
+                    </div>
+                    <div class="tipoA">
+                        <img class="img_tipos_calvicie" src="../../../imagens/img-quiz/tipoA.png" alt="calvicieTipoA" >
+                        <a href="tipos/tipoA.html"><button class="btn btn-outline-light btn-lg btn-block"><div class="mx-auto">TIPO A</div></button></a>
+                    </div>
+                    <div class="tipoO">
+                        <img class="img_tipos_calvicie" src="../../../imagens/img-quiz/tipoO.png" alt="calvicieTipoO" >
+                        <a href="tipos/tipoO.html"><button class="btn btn-outline-light btn-lg btn-block"><div class="mx-auto">TIPO O</div></button></a>
+                    </div>
+                    <div class="tipoM">
+                        <img class="img_tipos_calvicie" src="../../../imagens/img-quiz/tipoM.png" alt="calvicieTipoM" >
+                        <a href="tipos/tipoM.html"><button class="btn btn-outline-light btn-lg btn-block"><div class="mx-auto">TIPO M</div></button></a>
+                    </div>
+                    <div class="tipoOM">
+                        <img class="img_tipos_calvicie" src="../../../imagens/img-quiz/tipoOM.png" alt="calvicieTipoOM" >
+                        <a href="tipos/tipoOM.html"><button class="btn btn-outline-light btn-lg btn-block"><div class="mx-auto">TIPO OM</div></button></a>
+                    </div>
+                </div>
+
             </div>
         </div>
 
     </main>
+
+    <footer class="text-center align-middle footer">
+        <p>© 2022 Copyright: TRABALHO INTERDISCIPLINAR - APLICAÇÕES WEB</p>
+    </footer>
+
     
     
 
