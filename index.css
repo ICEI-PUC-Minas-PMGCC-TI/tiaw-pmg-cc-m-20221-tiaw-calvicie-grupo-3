@@ -68,7 +68,7 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
         height: calc(100% - 77px);
             height: -moz-calc(100% - 77px);
             height: -webkit-calc(100% - 77px);
-        background-image: url(../../imagens/img-index/background.jpg);
+        background-image: url(/imagens/img-index/background.jpg);
         background-color: white;
         background-position:center center; 
         background-repeat: no-repeat;
