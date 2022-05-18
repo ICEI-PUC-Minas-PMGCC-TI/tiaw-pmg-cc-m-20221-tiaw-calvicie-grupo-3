@@ -63,11 +63,11 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
     }
 /* NAVBAR */
 /* MAIN */
-    main{
+    .main{
         display: flex;
-        height: calc(100% - 77px);
-            height: -moz-calc(100% - 77px);
-            height: -webkit-calc(100% - 77px);
+        min-height: calc(100% - 77px);
+            min-height: -moz-calc(100% - 77px);
+            min-height: -webkit-calc(100% - 77px);
         background-image: url(../../imagens/img-index/background.jpg);
         background-color: white;
         background-position:center center; 
@@ -78,9 +78,9 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
         z-index: 1;
         position: absolute;
         width: 100%;
-        height: calc(100% - 77px);
-            height: -moz-calc(100% - 77px);
-            height: -webkit-calc(100% - 77px);
+        min-height: calc(100% - 77px);
+            min-height: -moz-calc(100% - 77px);
+            min-height: -webkit-calc(100% - 77px);
         background-color: rgba(0, 0, 0, 0.500);
     }
     .telainicio{
@@ -146,25 +146,61 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
         font-size: 15px;
     }
 /* FOOTER */
+
+
+
 /* RESPONSIVIDADE */
     @media screen and (max-width: 600px) {
-        .navbar .menu{
-            width: 100%;
-            max-height: 0;
-            overflow: hidden;
-        }
-        .navbar .list{
-            flex-direction: column;
-            align-items: center;
-            cursor: pointer;
-        }
-        .navbar label{
-            display: inline-flex;
-            align-items: center;
-            cursor: pointer;
-        }
-        #toggler:checked ~ .menu{
-            max-height: 1000%;
-        }
+        /* NAVBAR */
+            .navbar .menu{
+                width: 100%;
+                max-height: 0;
+                overflow: hidden;
+            }
+            .navbar .list{
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+            }
+            .navbar label{
+                display: inline-flex;
+                align-items: center;
+                cursor: pointer;
+            }
+            #toggler:checked ~ .menu{
+                max-height: 1000%;
+            }
+        /* NAVBAR */
+        /* MAIN */
+            .main{
+                background-image: none;
+                background-color: #212529;
+            }
+            .overlay{
+                display: none;
+            }
+            .telainicio{
+                margin: 10% auto;
+            }
+            .telainicio .titulo{
+                font-family: 'Be Vietnam Pro', sans-serif;
+                font-size: 45px;
+            }
+            .telainicio .subtitulo{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+            }
+            .telainicio .legenda{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+            }
+            .telainicio .destaque{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+            }
+        /* MAIN */
     }
 /* RESPONSIVIDADE */
