@@ -37,25 +37,22 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
         font-family: 'Inter', sans-serif;
         border-bottom: solid 1px rgba(0, 0, 0, 0.25);
     }
-    .navbar .logo {
-        margin-right: 50px;
-    }
-    .navbar .list{
+    .navbarLinks{
         display: flex;
         align-items: center;
         list-style: none;
         gap: 25px;
         margin-bottom: 0;
     }
-    .navbar .btn{
-        color: white;
-    }
-    .navbar a{
+    .navbarLinks a{
         text-decoration: none;
         color: inherit;
     }
-    .navbar a:hover{
+    .navbarLinks a:hover{
         color:slategray;
+    }
+    .navbar .btn{
+        color: white;
     }
     #toggler,
     .navbar label {
@@ -152,12 +149,12 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
 /* RESPONSIVIDADE */
     @media screen and (max-width: 600px) {
         /* NAVBAR */
-            .navbar .menu{
+            .navbarMenu{
                 width: 100%;
                 max-height: 0;
                 overflow: hidden;
             }
-            .navbar .list{
+            .navbarLinks{
                 flex-direction: column;
                 align-items: center;
                 cursor: pointer;
@@ -202,5 +199,10 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
                 font-size: 14px;
             }
         /* MAIN */
+        /* FOOTER */
+            .footer p{
+                font-size: 12px;
+            }
+        /* FOOTER */
     }
 /* RESPONSIVIDADE */
