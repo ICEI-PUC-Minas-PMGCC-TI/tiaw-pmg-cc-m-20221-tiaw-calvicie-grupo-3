@@ -49,12 +49,23 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
     .navbarLinks a{
         text-decoration: none;
         color: inherit;
+        transition: 0.3s;
     }
     .navbarLinks a:hover{
         color:slategray;
     }
-    .navbar .btn{
+    .navbar .quizBotao{
         color: white;
+        background: #212529;
+        padding: 6px 25px 8px 25px;
+        border-radius: 6px;
+        transition: 0.3s;
+        border: 1px solid #212529;
+    }
+    .navbar .quizBotao:hover{
+        color: black;
+        background: white;
+        border: 1px solid black;
     }
     #toggler,
     .navbar label {
@@ -76,7 +87,7 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
         justify-content: space-between;
     }
     .footer p {
-        margin: 8px 0px;
+        margin: 4px 0px 4px 0px;
         font-family: 'Inter', sans-serif;
         font-size: 15px;
     }

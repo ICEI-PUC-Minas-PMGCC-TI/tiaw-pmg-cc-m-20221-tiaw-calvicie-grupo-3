@@ -47,12 +47,23 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
     .navbarLinks a{
         text-decoration: none;
         color: inherit;
+        transition: 0.3s;
     }
     .navbarLinks a:hover{
         color:slategray;
     }
-    .navbar .btn{
+    .navbar .quizBotao{
         color: white;
+        background: #212529;
+        padding: 6px 25px 8px 25px;
+        border-radius: 6px;
+        transition: 0.3s;
+        border: 1px solid #212529;
+    }
+    .navbar .quizBotao:hover{
+        color: black;
+        background: white;
+        border: 1px solid black;
     }
     #toggler,
     .navbar label {
@@ -107,20 +118,29 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
     .telainicio .legenda{
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 19px;
     }
-    .telainicio .destaque{
+    .telainicio #destaque{
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
+        font-size: 19px;
+    }
+    .main .quizBotaoMain{
+        color: white;
+        background: #212529;
+        padding: 15px 35px 15px 35px;
+        border-radius: 6px;
+        transition: 0.3s;
+        border: 1px solid #212529;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Inter', sans-serif;
         font-size: 18px;
     }
-    .botao a{
-        font-family: 'Inter', sans-serif;
-        text-decoration: none;
-        color:white;
-    }
-    .botao a:hover{
-        color:slategray;
+    .main .quizBotaoMain:hover{
+        color: black;
+        background: rgb(255, 255, 255, 0.8);
+        border: 1px solid black;
     }
 /* MAIN */
 /* FOOTER */
@@ -138,7 +158,7 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
         justify-content: space-between;
     }
     .footer p {
-        margin: 8px 0px;
+        margin: 4px 0px 4px 0px;
         font-family: 'Inter', sans-serif;
         font-size: 15px;
     }
@@ -193,10 +213,15 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
                 font-weight: 400;
                 font-size: 14px;
             }
-            .telainicio .destaque{
+            .telainicio #destaque{
                 font-family: 'Poppins', sans-serif;
                 font-weight: 700;
                 font-size: 14px;
+            }
+            .main .quizBotaoMain{
+                color: black;
+                background: rgb(255, 255, 255, 0.8);
+                border: 1px solid black;
             }
         /* MAIN */
         /* FOOTER */
