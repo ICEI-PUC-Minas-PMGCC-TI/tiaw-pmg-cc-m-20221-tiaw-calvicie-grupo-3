@@ -55,7 +55,7 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
     .navbar .quizBotao{
         color: white;
         background: #212529;
-        padding: 6px 25px 8px 25px;
+        padding: 8px 15px 8px 15px;
         border-radius: 6px;
         transition: 0.3s;
         border: 1px solid #212529;
