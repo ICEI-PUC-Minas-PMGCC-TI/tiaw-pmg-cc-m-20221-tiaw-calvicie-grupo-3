@@ -37,37 +37,45 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
         font-family: 'Inter', sans-serif;
         border-bottom: solid 1px rgba(0, 0, 0, 0.25);
     }
-    .navbar .logo {
-        margin-right: 50px;
-    }
-    .navbar .list{
+    .navbarLinks{
         display: flex;
         align-items: center;
         list-style: none;
         gap: 25px;
         margin-bottom: 0;
     }
-    .navbar .btn{
-        color: white;
-    }
-    .navbar a{
+    .navbarLinks a{
         text-decoration: none;
         color: inherit;
+        transition: 0.3s;
     }
-    .navbar a:hover{
+    .navbarLinks a:hover{
         color:slategray;
     }
+    .navbar .quizBotao{
+        color: white;
+        background: #212529;
+        padding: 8px 15px 8px 15px;
+        border-radius: 6px;
+        transition: 0.3s;
+        border: 1px solid #212529;
+    }
+    .navbar .quizBotao:hover{
+        color: black;
+        background: white;
+        border: 1px solid black;
+    }
     #toggler,
-    .navbar i {
+    .navbar label {
         display: none;
     }
 /* NAVBAR */
 /* MAIN */
-    main{
+    .main{
         display: flex;
-        height: calc(100% - 77px);
-            height: -moz-calc(100% - 77px);
-            height: -webkit-calc(100% - 77px);
+        min-height: calc(100% - 77px);
+            min-height: -moz-calc(100% - 77px);
+            min-height: -webkit-calc(100% - 77px);
         background-image: url(../../imagens/img-index/background.jpg);
         background-color: white;
         background-position:center center; 
@@ -78,9 +86,9 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
         z-index: 1;
         position: absolute;
         width: 100%;
-        height: calc(100% - 77px);
-            height: -moz-calc(100% - 77px);
-            height: -webkit-calc(100% - 77px);
+        min-height: calc(100% - 77px);
+            min-height: -moz-calc(100% - 77px);
+            min-height: -webkit-calc(100% - 77px);
         background-color: rgba(0, 0, 0, 0.500);
     }
     .telainicio{
@@ -110,20 +118,29 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
     .telainicio .legenda{
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 19px;
     }
-    .telainicio .destaque{
+    .telainicio #destaque{
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
+        font-size: 19px;
+    }
+    .main .quizBotaoMain{
+        color: white;
+        background: #212529;
+        padding: 15px 35px 15px 35px;
+        border-radius: 6px;
+        transition: 0.3s;
+        border: 1px solid #212529;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Inter', sans-serif;
         font-size: 18px;
     }
-    .botao a{
-        font-family: 'Inter', sans-serif;
-        text-decoration: none;
-        color:white;
-    }
-    .botao a:hover{
-        color:slategray;
+    .main .quizBotaoMain:hover{
+        color: black;
+        background: rgb(255, 255, 255, 0.8);
+        border: 1px solid black;
     }
 /* MAIN */
 /* FOOTER */
@@ -141,8 +158,80 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
         justify-content: space-between;
     }
     .footer p {
-        margin: 8px 0px;
+        margin: 4px 0px 4px 0px;
         font-family: 'Inter', sans-serif;
         font-size: 15px;
     }
 /* FOOTER */
+
+
+
+/* RESPONSIVIDADE */
+    @media screen and (max-width: 600px) {
+        /* NAVBAR */
+            .navbarMenu{
+                width: 100%;
+                text-align: center;
+                max-height: 0;
+                overflow: hidden;
+            }
+            .navbarLinks{
+                margin: 0;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+            }
+            .navbar label{
+                display: inline-flex;
+                align-items: center;
+                cursor: pointer;
+            }
+            #toggler:checked + .navbarMenu{
+                display: block;
+                line-height: 40px;
+                max-height: 1000%;
+            }
+        /* NAVBAR */
+        /* MAIN */
+            .main{
+                background-image: none;
+                background-color: #212529;
+            }
+            .overlay{
+                display: none;
+            }
+            .telainicio{
+                margin: 10% auto;
+            }
+            .telainicio .titulo{
+                font-family: 'Be Vietnam Pro', sans-serif;
+                font-size: 45px;
+            }
+            .telainicio .subtitulo{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+            }
+            .telainicio .legenda{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+            }
+            .telainicio #destaque{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+            }
+            .main .quizBotaoMain{
+                color: black;
+                background: rgb(255, 255, 255, 0.8);
+                border: 1px solid black;
+            }
+        /* MAIN */
+        /* FOOTER */
+            .footer p{
+                font-size: 12px;
+            }
+        /* FOOTER */
+    }
+/* RESPONSIVIDADE */
