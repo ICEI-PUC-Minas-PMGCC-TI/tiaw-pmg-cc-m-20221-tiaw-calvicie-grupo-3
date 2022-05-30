@@ -171,10 +171,12 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
         /* NAVBAR */
             .navbarMenu{
                 width: 100%;
+                text-align: center;
                 max-height: 0;
                 overflow: hidden;
             }
             .navbarLinks{
+                margin: 0;
                 flex-direction: column;
                 align-items: center;
                 cursor: pointer;
@@ -184,7 +186,9 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
                 align-items: center;
                 cursor: pointer;
             }
-            #toggler:checked ~ .menu{
+            #toggler:checked + .navbarMenu{
+                display: block;
+                line-height: 40px;
                 max-height: 1000%;
             }
         /* NAVBAR */
