@@ -229,6 +229,9 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
             }
         /* MAIN */
         /* FOOTER */
+            .footer {
+                background-color: black;
+            }
             .footer p{
                 font-size: 12px;
             }
