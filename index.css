@@ -76,7 +76,7 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
         min-height: calc(100% - 77px);
             min-height: -moz-calc(100% - 77px);
             min-height: -webkit-calc(100% - 77px);
-        background-image: url(imagens/img-index/background.jpg);
+        background-image: url(/imagens/img-index/background.jpg);
         background-color: white;
         background-position:center center; 
         background-repeat: no-repeat;
