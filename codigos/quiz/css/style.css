@@ -94,7 +94,13 @@
     margin-left: 5%;
     margin-top: 2%;
     margin-bottom: 2%;
-    width: 200%;
+    width: 250%;
+    height: 50px;
+    transition: all 300ms;
+}
+
+.bnt__calvicie button:hover {
+    transform: scale(1.1);
 }
 
 .prevencao{
