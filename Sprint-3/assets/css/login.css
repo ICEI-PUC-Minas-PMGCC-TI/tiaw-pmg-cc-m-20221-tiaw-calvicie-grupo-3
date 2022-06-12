@@ -1,0 +1,85 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+main {
+    background-image: url(../img/careca.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: aqua;
+    position: relative;
+    height: 100vh;
+    inset: 0 0 0 0;
+}
+
+aside {
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.5);
+    backdrop-filter: blur(1rem);
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    position: relative;
+    margin-left: auto;
+    display: flex;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+}
+
+form div {
+    width: 325px;
+}
+
+form input {
+    width: 325px;
+}
+
+@media screen and (max-width: 1024px) {
+    aside {
+        width: auto;
+        height: auto;
+        max-width: fit-content;
+        margin: 0 auto;
+        border-radius: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 2rem 1rem;
+    }
+
+    form div {
+        width: 425px;
+    }
+
+    form input {
+        width: 425px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    form div {
+        width: 100%;
+    }
+
+    aside {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    aside > div {
+        width: 100%;
+    }
+
+    form input {
+        width: 100%;
+    }
+}
