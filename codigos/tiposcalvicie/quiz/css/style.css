@@ -1,0 +1,132 @@
+/* NAVBAR */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    font-family: 'Inter', sans-serif;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.25);
+}
+.navbar .logo {
+    margin-right: 50px;
+}
+.navbar .list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    margin-bottom: 0;
+}
+.navbar .btn{
+    color: white;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+.navbar a:hover{
+    color:slategray;
+}
+#toggler,
+.navbar i {
+    display: none;
+}
+/* NAVBAR */
+
+
+.imagens--calvice {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    gap: 1.5rem;
+    width:100%;
+    
+}
+
+.imagens--calvice img {
+    width: 80%;
+    margin:10%;
+}
+
+.imagens--calvice p{
+    text-align: center;
+}
+
+.imagens--calvice button {
+
+    align-items: space-around;
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 20%;
+    
+
+}
+
+
+.titulo__calvicie h1{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    width:80%; 
+    text-align: center;
+    margin-left: 9.5%;
+    margin-bottom: 4%;
+    margin-top: 8%;
+    
+}
+
+
+
+.titulo__calvicie {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bnt__calvicie{
+    display: flex;
+    width: 92%;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.bnt__calvicie button{
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 250%;
+    height: 50px;
+    transition: all 300ms;
+}
+
+.bnt__calvicie button:hover {
+    transform: scale(1.1);
+}
+
+.prevencao{
+    margin:10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer {
+    height: 40px;
+    z-index: 999;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    align-items: middle;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer p {
+    margin: 8px 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
