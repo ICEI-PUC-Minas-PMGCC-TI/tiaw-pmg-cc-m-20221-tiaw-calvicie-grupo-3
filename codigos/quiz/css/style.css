@@ -10,6 +10,10 @@
     border-bottom: solid 1px rgba(0, 0, 0, 0.25);
 }
 
+.fa-solid, .fas{
+    color: black;
+}
+
 .navbarLinks{
     display: flex;
     align-items: center;
@@ -19,7 +23,7 @@
 }
 .navbarLinks a{
     text-decoration: none;
-    color: inherit;
+    color: black;
     transition: 0.3s;
 }
 .navbarLinks a:hover{
@@ -138,4 +142,43 @@
     margin: 8px 0px;
     font-family: 'Inter', sans-serif;
     font-size: 15px;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 600px) {
+    /* NAVBAR */
+        .navbarMenu{
+            width: 100%;
+            text-align: center;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .navbarLinks{
+            margin: 0;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
+        .navbar label{
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        #toggler:checked + .navbarMenu{
+            display: block;
+            line-height: 40px;
+            max-height: 1000%;
+        }
+    /* NAVBAR */
+    /* MAIN */
+
+    /* MAIN */
+    /* FOOTER */
+        .footer {
+            background-color: black;
+        }
+        .footer p{
+            font-size: 12px;
+        }
+    /* FOOTER */
 }
