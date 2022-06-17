@@ -1,4 +1,4 @@
-const LOGIN_URL = "login.html";
+//const LOGIN_URL = "index.html";
 var db_usuarios = {};
 var usuarioCorrente = {};
 
@@ -24,10 +24,10 @@ function generateUUID() {
 const dadosIniciais = {
     usuarios: [
         { "id": generateUUID(), "login": "Adm", "senha": "123", "nome": "Administrador", "email": "adm@abc.com" },
-        { "id": generateUUID(), "login": "Suzane", "senha": "123", "nome": "Suzane Lemos", "email": "sulemos@abc.com" },
-        { "id": generateUUID(), "login": "Gabriel", "senha": "123", "nome": "Gabriel Bambirra", "email": "bambirra@abc.com" },
-        { "id": generateUUID(), "login": "Guilherme", "senha": "123", "nome": "Guilherme Coelho", "email": "coelhogui@abc.com" },
-        { "id": generateUUID(), "login": "Luiza", "senha": "123", "nome": "Luiza Matos", "email": "lulumatos@abc.com" },
+        { "id": generateUUID(), "login": "Luis", "senha": "123", "nome": "Amanda Barros", "email": "AMbarros@abc.com" },
+        { "id": generateUUID(), "login": "Xeyla", "senha": "123", "nome": "Xeyla Texeira", "email": "xeylaT@abc.com" },
+        { "id": generateUUID(), "login": "João", "senha": "123", "nome": "João Andrade", "email": "jAndrade@abc.com" },
+        { "id": generateUUID(), "login": "João", "senha": "123", "nome": "Joao victor scarmato", "email": "JVS@abc.com" },
     ]
 };
 
@@ -74,11 +74,11 @@ function loginUser(login, senha) {
     return false;
 }
 
-function logoutUser() {
-    usuarioCorrente = {};
-    sessionStorage.setItem('usuarioCorrente', JSON.stringify(usuarioCorrente));
-    window.location = LOGIN_URL;
-}
+// function logoutUser() {
+//     usuarioCorrente = {};
+//     sessionStorage.setItem('usuarioCorrente', JSON.stringify(usuarioCorrente));
+//     window.location = LOGIN_URL;
+// }
 
 
 function addUser(nome, login, senha, email) {
@@ -93,3 +93,69 @@ function setUserPass() {
 }
 
 initLoginApp();
+
+function processaFormLogin (event) {                
+                
+    event.preventDefault ();
+
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    resultadoLogin = loginUser (username, password);
+    if (resultadoLogin) {
+        window.location.href = 'index.html';
+    }
+    else { //se login falhar
+        alert ('Usuário ou senha incorretos');
+    }
+}
+
+function salvaLogin (event) {
+event.preventDefault ();
+
+let login  = document.getElementById('txt_login').value;
+let nome   = document.getElementById('txt_nome').value;
+let email  = document.getElementById('txt_email').value;
+let senha  = document.getElementById('txt_senha').value;
+let senha2 = document.getElementById('txt_senha2').value;
+if (senha != senha2) {
+    alert ('As senhas são diferentes');
+    return
+}
+addUser (nome, login, senha, email);
+alert ('Usuário salvo com sucesso');
+
+$('#loginModal').modal('hide');
+}
+
+document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);
+
+document.getElementById ('btn_salvar').addEventListener ('click', salvaLogin);
+
+if (!usuarioCorrente.login) {
+    window.location.href = LOGIN_URL;
+}
+
+function exibeUsuarios() {
+
+    let listaUsuarios = '';
+    for (i = 0; i < db_usuarios.usuarios.length; i++) {
+        let usuario = db_usuarios.usuarios[i];
+        listaUsuarios += `<tr><td scope="row">${usuario.nome}</td><td>${usuario.login}</td><td>${usuario.email}</td></tr>`;
+    }
+
+    document.getElementById("table-usuarios").innerHTML = listaUsuarios
+
+}
+
+function initPage() {
+
+    document.getElementById('btn_logout').addEventListener('click', logoutUser);
+
+    document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.nome;
+
+    exibeUsuarios ();
+}
+
+window.addEventListener('load', initPage);
+
