@@ -1,0 +1,171 @@
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    font-family: 'Inter', sans-serif;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.25);
+}
+.navbar .logo {
+    margin-right: 50px;
+}
+.navbar .list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    margin-bottom: 0;
+}
+.navbar .btn{
+    color: white;
+}
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+}
+.navbar a:hover{
+    color:slategray;
+}
+#toggler,
+.navbar i {
+    display: none;
+}
+
+/*
+------------------------------------------------------------------------
+                        ESQUEMA DE CORES:
+------------------------------------------------------------------------
+PRETO -> #212529;
+
+CINZA ARDÓSIA -> slategray;
+
+BRANCO -> white;
+------------------------------------------------------------------------
+                        OPÇÕES DE FONTES:
+------------------------------------------------------------------------
+TÍTULOS -> font-family: 'Be Vietnam Pro', sans-serif;
+
+SUBTÍTULOS E LEGENDAS -> font-family: 'Poppins', sans-serif;
+
+BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
+------------------------------------------------------------------------
+*/
+
+/* GERAL */
+body,
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+/* GERAL */
+/* NAVBAR */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    font-family: 'Inter', sans-serif;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.25);
+}
+
+.navbarLinks{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    margin-bottom: 0;
+}
+.navbarLinks a{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+.navbarLinks a:hover{
+    color:slategray;
+}
+.navbar .quizBotao{
+    color: white;
+    background: #212529;
+    padding: 8px 15px 8px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+    border: 1px solid #212529;
+}
+.navbar .quizBotao:hover{
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+#toggler,
+.navbar label {
+    display: none;
+}
+/* NAVBAR */
+/* FOOTER */
+.footer {
+    height: 40px;
+    z-index: 999;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: #212529;
+    align-items: middle;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer p {
+    margin: 4px 0px 4px 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+/* FOOTER */
+
+
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 600px) {
+    /* NAVBAR */
+        .navbarMenu{
+            width: 100%;
+            text-align: center;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .navbarLinks{
+            margin: 0;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
+        .navbar label{
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        #toggler:checked + .navbarMenu{
+            display: block;
+            line-height: 40px;
+            max-height: 1000%;
+        }
+    /* NAVBAR */
+    /* MAIN */
+
+    /* MAIN */
+    /* FOOTER */
+        .footer {
+            background-color: black;
+        }
+        .footer p{
+            font-size: 12px;
+        }
+    /* FOOTER */
+}
+/* RESPONSIVIDADE */
