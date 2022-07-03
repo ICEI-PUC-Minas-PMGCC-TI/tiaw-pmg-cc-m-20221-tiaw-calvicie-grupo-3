@@ -125,7 +125,7 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
         font-weight: 700;
         font-size: 19px;
     }
-    .main .quizBotaoMain{
+    .main .botaoMain{
         color: white;
         background: #212529;
         padding: 15px 35px 15px 35px;
@@ -137,7 +137,7 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
         font-family: 'Inter', sans-serif;
         font-size: 18px;
     }
-    .main .quizBotaoMain:hover{
+    .main .botaoMain:hover{
         color: black;
         background: rgb(255, 255, 255, 0.8);
         border: 1px solid black;
@@ -222,7 +222,7 @@ BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> font-family: 'Inter', sans-serif;
                 font-weight: 700;
                 font-size: 14px;
             }
-            .main .quizBotaoMain{
+            .main .botaoMain{
                 color: black;
                 background: rgb(255, 255, 255, 0.8);
                 border: 1px solid black;
