@@ -27,7 +27,6 @@ const dadosIniciais = {
         { "id": generateUUID(), "login": "Luis", "senha": "123", "nome": "Amanda Barros", "email": "AMbarros@abc.com" },
         { "id": generateUUID(), "login": "Xeyla", "senha": "123", "nome": "Xeyla Texeira", "email": "xeylaT@abc.com" },
         { "id": generateUUID(), "login": "João", "senha": "123", "nome": "João Andrade", "email": "jAndrade@abc.com" },
-        { "id": generateUUID(), "login": "João", "senha": "123", "nome": "Joao victor scarmato", "email": "JVS@abc.com" },
     ]
 };
 
@@ -94,43 +93,42 @@ function setUserPass() {
 
 initLoginApp();
 
-function processaFormLogin (event) {                
-                
-    event.preventDefault ();
+function processaFormLogin(event) {
+
+    event.preventDefault();
 
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
 
-    resultadoLogin = loginUser (username, password);
+    resultadoLogin = loginUser(username, password);
     if (resultadoLogin) {
         window.location.href = 'index.html';
+    } else { //se login falhar
+        alert('Usuário ou senha incorretos');
     }
-    else { //se login falhar
-        alert ('Usuário ou senha incorretos');
+}
+
+function salvaLogin(event) {
+    event.preventDefault();
+
+    let login = document.getElementById('txt_login').value;
+    let nome = document.getElementById('txt_nome').value;
+    let email = document.getElementById('txt_email').value;
+    let senha = document.getElementById('txt_senha').value;
+    let senha2 = document.getElementById('txt_senha2').value;
+    if (senha != senha2) {
+        alert('As senhas são diferentes');
+        return
     }
+    addUser(nome, login, senha, email);
+    alert('Usuário salvo com sucesso');
+
+    $('#loginModal').modal('hide');
 }
 
-function salvaLogin (event) {
-event.preventDefault ();
+document.getElementById('login-form').addEventListener('submit', processaFormLogin);
 
-let login  = document.getElementById('txt_login').value;
-let nome   = document.getElementById('txt_nome').value;
-let email  = document.getElementById('txt_email').value;
-let senha  = document.getElementById('txt_senha').value;
-let senha2 = document.getElementById('txt_senha2').value;
-if (senha != senha2) {
-    alert ('As senhas são diferentes');
-    return
-}
-addUser (nome, login, senha, email);
-alert ('Usuário salvo com sucesso');
-
-$('#loginModal').modal('hide');
-}
-
-document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);
-
-document.getElementById ('btn_salvar').addEventListener ('click', salvaLogin);
+document.getElementById('btn_salvar').addEventListener('click', salvaLogin);
 
 if (!usuarioCorrente.login) {
     window.location.href = LOGIN_URL;
@@ -154,8 +152,7 @@ function initPage() {
 
     document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.nome;
 
-    exibeUsuarios ();
+    exibeUsuarios();
 }
 
 window.addEventListener('load', initPage);
-
